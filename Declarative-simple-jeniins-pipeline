@@ -18,7 +18,7 @@ pipeline {
         }
 		stage('Archive') {
             steps {
-                sh 'echo Archive'
+                sh 'echo archive shi'
             }
         }
     }
