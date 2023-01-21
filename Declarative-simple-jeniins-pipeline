@@ -1,14 +1,25 @@
-node {
-    stage('Hello') {
-       sh 'echo hello world'
-    }
-    stage('SCM Checkout') {
-       sh 'echo SCM Checkout'
-    }
-    stage('Build-Test') {
-        sh 'echo Build-Test'
-    }
-    stage('Archive') {
-        sh 'echo archive'
+pipeline {
+    agent any 
+    stages {
+        stage('Hello World') {
+            steps {
+                sh 'echo Hello World'
+            }
+        }
+		stage('SCM-Checkout') {
+            steps {
+                sh 'echo SCM-Checkout'
+            }
+        }
+		stage('Build-Test') {
+            steps {
+                sh 'echo Build-Test'
+            }
+        }
+		stage('Archive') {
+            steps {
+                sh 'echo Archive'
+            }
+        }
     }
 }
